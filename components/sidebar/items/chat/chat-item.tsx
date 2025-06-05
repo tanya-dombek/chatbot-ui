@@ -63,6 +63,7 @@ export const ChatItem: FC<ChatItemProps> = ({ chat }) => {
       tabIndex={0}
       onKeyDown={handleKeyDown}
       onClick={handleClick}
+      data-testid="chat-item"
     >
       {chat.assistant_id ? (
         assistantImage ? (

@@ -35,6 +35,7 @@ export const TextareaAutosize: FC<TextareaAutosizeProps> = ({
 }) => {
   return (
     <ReactTextareaAutosize
+      data-testid="chat-input"
       ref={textareaRef}
       className={cn(
         "bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring flex w-full resize-none rounded-md border-2 px-3 py-2 text-sm focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50",

@@ -262,6 +262,7 @@ export const ChatInput: FC<ChatInputProps> = ({}) => {
             />
           ) : (
             <IconSend
+              data-testid="send-btn"
               className={cn(
                 "bg-primary text-secondary rounded p-1",
                 !userInput && "cursor-not-allowed opacity-50"

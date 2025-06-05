@@ -71,6 +71,7 @@ export const ChatSettings: FC<ChatSettingsProps> = ({}) => {
           ref={buttonRef}
           className="flex items-center space-x-2"
           variant="ghost"
+          data-testid="chat-settings"
         >
           <div className="max-w-[120px] truncate text-lg sm:max-w-[300px] lg:max-w-[500px]">
             {fullModel?.modelName || chatSettings.model}

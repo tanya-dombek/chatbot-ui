@@ -210,6 +210,7 @@ export const ChatUI: FC<ChatUIProps> = ({}) => {
       <div
         className="flex size-full flex-col overflow-auto border-b"
         onScroll={handleScroll}
+        data-testid="chat-messages"
       >
         <div ref={messagesStartRef} />
 

@@ -19,6 +19,7 @@ export default function HomePage() {
       <Link
         className="mt-4 flex w-[200px] items-center justify-center rounded-md bg-blue-500 p-2 font-semibold"
         href="/login"
+        data-testid="start-chat-btn"
       >
         Start Chatting
         <IconArrowRight className="ml-1" size={20} />

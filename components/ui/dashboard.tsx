@@ -86,6 +86,7 @@ export const Dashboard: FC<DashboardProps> = ({ children }) => {
           <Tabs
             className="flex h-full"
             value={contentType}
+            data-testid="sidebar"
             onValueChange={tabValue => {
               setContentType(tabValue as ContentType)
               router.replace(`${pathname}?tab=${tabValue}`)
@@ -124,6 +125,7 @@ export const Dashboard: FC<DashboardProps> = ({ children }) => {
           variant="ghost"
           size="icon"
           onClick={handleToggleSidebar}
+          data-testid="sidebar-btn"
         >
           <IconChevronCompactRight size={24} />
         </Button>

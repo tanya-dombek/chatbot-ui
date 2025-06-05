@@ -24,6 +24,7 @@ export const ChatMessages: FC<ChatMessagesProps> = ({}) => {
 
       return (
         <Message
+          data-testid="message"
           key={chatMessage.message.sequence_number}
           message={chatMessage.message}
           fileItems={messageFileItems}

@@ -101,6 +101,7 @@ export const ModelSelect: FC<ModelSelectProps> = ({
           </div>
         ) : (
           <Button
+            data-testid="model-options"
             ref={triggerRef}
             className="flex items-center justify-between"
             variant="ghost"
@@ -137,7 +138,9 @@ export const ModelSelect: FC<ModelSelectProps> = ({
             <TabsList defaultValue="hosted" className="grid grid-cols-2">
               <TabsTrigger value="hosted">Hosted</TabsTrigger>
 
-              <TabsTrigger value="local">Local</TabsTrigger>
+              <TabsTrigger value="local" data-testid="tab-local">
+                Local
+              </TabsTrigger>
             </TabsList>
           )}
         </Tabs>
